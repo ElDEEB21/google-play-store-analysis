@@ -17,7 +17,7 @@ st.title("📊 Google Play Store Data Visualizations")
 
 ## Sidebar for selecting visualizations
 st.sidebar.title("Select Visualization")
-visualization = st.sidebar.selectbox(
+visualization = st.sidebar.radio(
     "Choose a graph to display",
     [
         "Distribution of Ratings",
