@@ -26,7 +26,7 @@ This repository is organized into several key components:
 
 ### Interactive Dashboard
 
-- **[Streamlit App](https://app-play-store-analysis-ctr36djqdxmh9brhvvmu6r.streamlit.app/):**  
+- **[Streamlit App](https://app-play-store-analysis-by-eldeeb.streamlit.app/):**  
   A Streamlit-based web application that showcases the visualizations derived from the Google Play Store data. The app is designed to be both aesthetically pleasing and user-friendly, providing an interactive way to explore the data.
 
 ### Streamlit App Details
