@@ -26,8 +26,39 @@ This repository is organized into several key components:
 
 ### Interactive Dashboard
 
+- **[Streamlit App](https://app-play-store-analysis-ctr36djqdxmh9brhvvmu6r.streamlit.app/):**  
+  A Streamlit-based web application that showcases the visualizations derived from the Google Play Store data. The app is designed to be both aesthetically pleasing and user-friendly, providing an interactive way to explore the data.
+
+### Streamlit App Details
+
 - **[app.py](./app.py):**  
-  A Dash-based web application that showcases the visualizations derived from the Google Play Store data. The app is designed to be both aesthetically pleasing and user-friendly, providing an interactive way to explore the data.
+  This Python script contains the code for the Streamlit app used to create interactive visualizations of the Google Play Store data. Here's an overview of the components within `app.py`:
+
+  - **Imports and Setup:**  
+    The script begins by importing necessary libraries such as `streamlit` for building the web application, `pandas` for data manipulation, and `plotly.express` for creating visualizations. It also sets up the Streamlit page configuration.
+
+  - **Data Loading:**  
+    The cleaned dataset (`cleaned_googleplaystore.csv`) is loaded into a DataFrame. The app initializes with a title and sidebar for selecting different visualizations.
+
+  - **User Interface:**  
+    Streamlit's sidebar is used to create interactive widgets such as radio buttons that allow users to choose the type of graph they want to display. The options include:
+    - Distribution of Ratings
+    - Number of Apps in Each Category
+    - Distribution of App Prices
+    - Distribution of App Sizes
+    - Ratings vs. Size of Apps
+    - Pairplot of Rating, Price, and Size
+    - Number of Apps Released per Year
+    - Boxplot of Ratings by Category
+
+  - **Visualizations:**  
+    Depending on the user's selection, various visualizations are generated using Plotly. These include histograms, bar charts, scatter plots, and box plots. Each visualization is customized for clarity and aesthetics.
+
+  - **Metrics and Insights:**  
+    Each visualization is accompanied by key metrics and insights, such as average ratings, most common categories, and correlations. This provides users with a comprehensive understanding of the data.
+
+  - **Footer and Contact Information:**  
+    The sidebar and main page include footers with information about the project, creator, and contact details. It also provides links to the dataset source and GitHub repository.
 
 ## Features
 
@@ -43,7 +74,7 @@ This project is rich in features, providing a comprehensive framework for analyz
   The web application includes dynamic visualizations that allow users to explore the data interactively, offering a deeper understanding of the mobile app ecosystem.
 
 - **User-Friendly Interface:**  
-  The Dash app is designed with usability in mind, providing an intuitive interface for navigating through the visualizations.
+  The Streamlit app is designed with usability in mind, providing an intuitive interface for navigating through the visualizations.
 
 ## Project Goals
 
@@ -67,9 +98,6 @@ While the current state of the project offers valuable insights, there are oppor
 
 - **Expanded Dataset:**  
   Incorporating additional data points such as user reviews, update history, and developer information to provide a more holistic view of the app market.
-
-- **Cloud Deployment:**  
-  Hosting the interactive dashboard on a cloud platform to make it accessible to a broader audience.
 
 ## Conclusion
 
